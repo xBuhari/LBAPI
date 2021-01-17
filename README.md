@@ -1,5 +1,5 @@
 # LBAPI
-LullBukkitAPI, Minecraft sunucuları için yardımcı API.
+LullBukkitAPI, helper api for Minecraft servers.
 
 **API Maven-Gradle Dependency:**
 
@@ -29,7 +29,7 @@ dependencies {
 }
 ```
 
-**Kullanım:**
+**Using:**
 ```java
 public LBAPI lbAPI;
 
