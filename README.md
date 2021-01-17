@@ -1,7 +1,7 @@
 # LBAPI
 LullBukkitAPI, Minecraft sunucuları için yardımcı API.
 
-**API Maven-Gradle Dependency**
+**API Maven-Gradle Dependency:**
 
 Maven:
 ```xml
@@ -11,9 +11,9 @@ Maven:
 </repository>
 
 <dependency>
-    <groupId>me.xBuhari.LBAPI</groupId>
+    <groupId>com.github.xBuhari</groupId>
     <artifactId>LBAPI</artifactId>
-    <version>1.0.0</version>
+    <version>VERSION</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -25,10 +25,16 @@ repositories {
 }
 
 dependencies {
-    compile 'me.xBuhari.LBAPI:LBAPI:1.0.0'
+    compile 'com.github.xBuhari:LBAPI:VERSION'
 }
 ```
 
-**Kullanım**
+**Kullanım:**
+```java
+public LBAPI lbAPI;
 
+public void onEnable() {
+    lbAPI = new LBAPI(this);
+    getLogger().info("TPS: " + lbAPI.getServerAPI().getServerTPS());
+}```
 
