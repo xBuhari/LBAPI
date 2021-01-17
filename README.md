@@ -36,5 +36,5 @@ public LBAPI lbAPI;
 public void onEnable() {
     lbAPI = new LBAPI(this);
     getLogger().info("TPS: " + lbAPI.getServerAPI().getServerTPS());
-}```
+}
 
